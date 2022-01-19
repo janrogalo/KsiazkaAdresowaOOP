@@ -23,9 +23,11 @@ class UzytkownikMenadzer{
     bool czyIstniejeLogin(string login);
     
     
+    
 public:
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
+    void wczytajUzytkownikowZPliku();
 
     
 };
