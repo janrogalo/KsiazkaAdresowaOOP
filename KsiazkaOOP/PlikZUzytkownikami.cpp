@@ -7,11 +7,6 @@
 
 #include "PlikZUzytkownikami.hpp"
 
-PlikZUzytkownikami::PlikZUzytkownikami(){
-    nazwaPlikuZUzytkownikami= "Uzytkownicy.txt";
-}
-
-
 void PlikZUzytkownikami::dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik){
    
     string liniaZDanymiUzytkownika = "";
