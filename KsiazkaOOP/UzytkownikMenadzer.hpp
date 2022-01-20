@@ -9,6 +9,7 @@
 #include <sstream> 
 
 #include "PlikZUzytkownikami.hpp"
+#include "MetodyPomocnicze.hpp"
 
 using namespace std;
 
@@ -25,12 +26,16 @@ class UzytkownikMenadzer{
     
     
 public:
-    UzytkownikMenadzer(string nazwaPlikuZUzytkownikami) : plikZUzytkownikami( nazwaPlikuZUzytkownikami){};
-
+    UzytkownikMenadzer(string nazwaPlikuZUzytkownikami) : plikZUzytkownikami( nazwaPlikuZUzytkownikami){
+    };
+    int logowanieUzytkownika();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
     void wczytajUzytkownikowZPliku();
-
+    void zmianaHaslaZalogowanegoUzytkownika();
+    void ustawIdZalogowanegoUzytkownika (int IDZALOGOWANEGOUZYTKOWNIKA );
+    int pobierzIdZalogowanegoUzytkownika();
+    void wylogujUzytkownika();
     
 };
 
