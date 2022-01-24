@@ -1,10 +1,3 @@
-//
-//  MetodyPomocnicze.hpp
-//  KsiazkaOOP
-//
-//  Created by Jan Rogalo on 19/01/2022.
-//
-
 #ifndef MetodyPomocnicze_hpp
 #define MetodyPomocnicze_hpp
 
@@ -20,6 +13,11 @@ using namespace std;
 class MetodyPomocnicze{
 public:
 static string konwerjsaIntNaString(int liczba);
+static string wczytajLinie();
+static string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
+static int konwersjaStringNaInt(string liczba);
+
 };
+
 
 #endif /* MetodyPomocnicze_hpp */
