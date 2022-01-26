@@ -16,7 +16,7 @@ Adresat AdresatMenadzer::podajDaneNowegoAdresata()
 
     adresat.ustawId(plikZAdresatami.pobierzIdOstatniegoAdresata() +1);
     adresat.ustawIdUzytkownika(ID_ZALOGOWANEGO_UZYTKOWNIKA);
-                            
+    cin.ignore();
 
     cout << "Podaj imie: ";
     adresat.ustawImie(MetodyPomocnicze::wczytajLinie());
@@ -172,9 +172,10 @@ int AdresatMenadzer::podajIdWybranegoAdresata()
 void AdresatMenadzer:: usunAdresata(){
     int idUsuwanegoAdresata = 0;
  
-
+    cin.ignore();
     cout << ">>> USUWANIE WYBRANEGO ADRESATA <<<" << endl << endl;
     idUsuwanegoAdresata = podajIdWybranegoAdresata();
+
 
     char znak;
     bool czyIstniejeAdresat = false;
@@ -188,9 +189,9 @@ void AdresatMenadzer:: usunAdresata(){
             znak = getchar();
             if (znak == 't')
             {
-    
-                plikZAdresatami.usunWybranaLinieWPliku(idUsuwanegoAdresata);
                 adresaci.erase(itr);
+                plikZAdresatami.usunWybranaLinieWPliku(idUsuwanegoAdresata);
+             
                 cout << endl << endl << "Szukany adresat zostal USUNIETY" << endl << endl;
             }
             else

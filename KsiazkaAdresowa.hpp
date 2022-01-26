@@ -34,6 +34,8 @@ public:
     int pobierzIdZalogowanegoUzytkownika();
     void edytujAdresata();
     void usunAdresata();
+    void menuUzytkownika();
+    void menuGlowne();
 };
 
 #endif /* KsiazkaAdresowa_hpp */

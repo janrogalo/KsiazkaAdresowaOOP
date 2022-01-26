@@ -8,22 +8,21 @@
 #include <sstream>
 #include "Adresat.hpp"
 #include "MetodyPomocnicze.hpp"
+#include "PlikTekstowy.hpp"
 
 using namespace std;
 
-class PlikZAdresatami{
-    const string nazwaPlikuZAdresatami;
+class PlikZAdresatami :  public PlikTekstowy {
+  //  const string nazwaPlikuZAdresatami;
     int idOstatniegoAdresata;
     int idZalogowanegoUzytkownika;
-    
-    bool czyPlikJestPusty();
     string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
     string pobierzLiczbe(string tekst, int pozycjaZnaku);
-    
     Adresat pobierzDaneAdresata(string daneJednegoAdresataOddzielonePionowymiKreskami);
     
 public:
-    PlikZAdresatami(string NAZWAPLIKUZADRESATAMI) : nazwaPlikuZAdresatami(NAZWAPLIKUZADRESATAMI){
+    PlikZAdresatami(string nazwaPliku) : PlikTekstowy(nazwaPliku)
+     {
         idOstatniegoAdresata = 0;
     };
     
@@ -32,10 +31,6 @@ public:
    int pobierzIdOstatniegoAdresata();
     int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
-  
-    
-    //
-    
     void zaktualizujDaneWybranegoAdresata(Adresat adresat, int idEdytowanegoAdresata);
     void usunPlik(string nazwaPlikuZRozszerzeniem);
     void zmienNazwePliku(string staraNazwa, string nowaNazwa);
