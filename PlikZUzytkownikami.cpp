@@ -125,7 +125,7 @@ void PlikZUzytkownikami::zapiszWszystkichUzytkownikowDoPliku( vector <Uzytkownik
     }
     else
     {
-        cout << "Nie mozna otworzyc pliku " << pobierzNazwePliku() << endl;
+        cout << "Nie mozna otworzyc pliku " << pobierzNazwePliku().c_str() << endl;
     }
     plikTekstowy.close();
 

@@ -143,8 +143,6 @@ int PlikZAdresatami::pobierzIdOstatniegoAdresata()
     
 }
 
-//
-
 void PlikZAdresatami::zaktualizujDaneWybranegoAdresata(Adresat adresat, int idEdytowanegoAdresata)
 {
     string liniaZDanymiAdresata = "";
@@ -273,17 +271,3 @@ int PlikZAdresatami::pobierzZPlikuIdOstatniegoAdresata()
     return idOstatniegoAdresata;
 }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
- 
-

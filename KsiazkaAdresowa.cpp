@@ -70,3 +70,12 @@ void KsiazkaAdresowa::menuGlowne(){
     cout << "---------------------------" << endl;
     cout << "Twoj wybor: ";
 }
+
+
+void KsiazkaAdresowa::wyszukajPoImieniu(){
+    adresatMenadzer->wyszukajAdresatowPoImieniu();
+}
+
+void KsiazkaAdresowa::wyszukajPoNazwisku(){
+    adresatMenadzer->wyszukajAdresatowPoNazwisku();
+}

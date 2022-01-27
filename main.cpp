@@ -41,10 +41,10 @@ int main() {
                     ksiazkaAdresowa.dodajAdresata();
                     break;
                 case '2':
-                    //  wyszukajAdresatowPoImieniu(adresaci);
+                    ksiazkaAdresowa.wyszukajPoImieniu();
                     break;
                 case '3':
-                    //   wyszukajAdresatowPoNazwisku(adresaci);
+                    ksiazkaAdresowa.wyszukajPoNazwisku();
                     break;
                 case '4':
                     ksiazkaAdresowa.wypiszWszystkichAdresatow();

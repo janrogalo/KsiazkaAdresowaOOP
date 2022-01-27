@@ -1,10 +1,3 @@
-//
-//  PlikTekstowy.cpp
-//  KsiazkaOOP
-//
-//  Created by Jan Rogalo on 26/01/2022.
-//
-
 #include "PlikTekstowy.hpp"
 
 bool PlikTekstowy::czyPlikJestPusty()
