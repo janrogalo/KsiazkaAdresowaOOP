@@ -189,10 +189,12 @@ void AdresatMenadzer:: usunAdresata(){
             znak = getchar();
             if (znak == 't')
             {
-                adresaci.erase(itr);
+           
                 plikZAdresatami.usunWybranaLinieWPliku(idUsuwanegoAdresata);
-             
+                adresaci.erase(itr);
+            
                 cout << endl << endl << "Szukany adresat zostal USUNIETY" << endl << endl;
+                break;
             }
             else
             {
